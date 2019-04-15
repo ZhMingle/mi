@@ -25,5 +25,5 @@ export default {
 </script>
 
 <style lang='sass'>
-
+  @import './styles/reset.css'
 </style>
