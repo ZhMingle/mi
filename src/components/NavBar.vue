@@ -1,37 +1,21 @@
 <template>
-  <div>
-     <ul class="nav-bar">
-        <li
-          v-for='(tab, index) in tabs'
-          :key='index'
-        ><router-link :to="tab.href" active-class='active' exact>{{tab.name}}</router-link></li>
-     </ul>
-  </div>
+    <van-tabbar v-model="active" active-color="#ff6700">
+      <van-tabbar-item icon="home-o" to="/">首页</van-tabbar-item>
+      <van-tabbar-item icon="bars" to="/category">分类</van-tabbar-item>
+      <van-tabbar-item icon="shopping-cart" info="5" to="/cart">购物车</van-tabbar-item>
+      <van-tabbar-item icon="manager"  to="/user">我的</van-tabbar-item>
+    </van-tabbar>
+
 </template>
 <script>
+import Vue from 'vue' 
+import { Tabbar, TabbarItem, Icon } from 'vant'
+Vue.use(Tabbar).use(TabbarItem).use(Icon)
 export default {
-  props: {
-    tabs: {
-      type: Array
+  data () {
+    return {
+      active: 0
     }
-
   }
 }
 </script>
-<style lang="scss">
-.nav-bar{
-  position: fixed;
-  bottom:0;
-  left: 0;
-  li{
-    float:left;
-    padding-left: 20px;
-    list-style: none;
-    height: 50px;
-    cursor: pointer;
-    .active {
-      color:#ff6700;
-    }
-  }
-}
-</style>
