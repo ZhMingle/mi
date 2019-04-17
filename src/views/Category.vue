@@ -31,9 +31,11 @@
     </div>
   </div>
 </template>
+
 <script>
-document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.75 + 'px'
+
 </script>
+
 <style>
   @import 'http://at.alicdn.com/t/font_1008288_i7pqwosjka.css';
   @import '../styles/category.css';
