@@ -71,7 +71,7 @@
             <li>
               <router-link to="/detail">
                 <img src='../images/icon111.webp'>
-              </router-link>    
+              </router-link>
             </li>
             <li>
               <a href='#'>

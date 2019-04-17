@@ -1,0 +1,15 @@
+<template>
+  <div id="home">
+    <router-view></router-view>
+    <nav-bar></nav-bar>
+  </div>
+</template>
+<script>
+import NavBar from '../components/NavBar'
+export default {
+  name: 'home',
+  components: {
+    NavBar
+  }
+}
+</script>
