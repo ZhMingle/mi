@@ -37,7 +37,6 @@
             <img :src='item' style='width:100%;'>
           </van-swipe-item>
         </van-swipe>
-
         <div class='nav'>
           <ul>
             <li>
@@ -70,9 +69,9 @@
         <div class='picture'>
           <ul>
             <li>
-              <a href='#'>
+              <router-link to="/detail">
                 <img src='../images/icon111.webp'>
-              </a>
+              </router-link>    
             </li>
             <li>
               <a href='#'>

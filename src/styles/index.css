@@ -86,24 +86,6 @@ body #content {
 body #content .in-box01 {
   min-height: 5.4rem;
 }
-
-body #content .in-box01 .banner {
-  width: 100%;
-  height: 1.87rem;
-  overflow-y: hidden;
-  position: relative;
-}
-
-body #content .in-box01 .banner ul {
-  width: 300%;
-  height: 1.87rem;
-}
-
-body #content .in-box01 .banner ul img {
-  height: 1.87rem;
-  float: left;
-}
-
 body #content .in-box01 .icon {
   display: block;
   height: .2rem;
