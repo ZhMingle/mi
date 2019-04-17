@@ -135,6 +135,5 @@ export default {
 </script>
 <style>
 @import 'http://at.alicdn.com/t/font_962111_ki0u9gfn0z.css';
-@import '../styles/reset.css';
 @import '../styles/index.css';
 </style>
