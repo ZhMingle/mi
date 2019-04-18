@@ -49,19 +49,22 @@ body #H-header .header-top form .icon-sousuo {
 body #H-header .header-top .icon-wode {
   font-size: .16rem;
 }
-
-body #H-header .in-list {
-  width: 100%;
+body #H-header .in-lists{
+  overflow: scroll;
+}
+body #H-header .in-list{
   height: .32rem;
-  line-height: .3rem;
-  overflow: hidden;
-  position: relative;
+  width:170%;
   background: #ffff;
 }
 
-body #H-header .in-list li {
+body #H-header .in-list>li {
+  text-align: center;
   float: left;
-  margin: 0 .15rem;
+  height: .32rem;
+  line-height: .32rem;
+  margin: 0 .15rem; 
+  width: .3rem;
 }
 
 body #H-header .in-list li:hover {
@@ -69,11 +72,16 @@ body #H-header .in-list li:hover {
   border-bottom: 2px solid #ff6b00;
 }
 
-body #H-header .in-list i {
+body #H-header .icon-xiala {
+  background: #ffff;
   position: absolute;
-  top: 0;
+  top: .42rem;
   right: .15rem;
+  padding: .08rem;
 }
+
+
+
 
 body #content {
   position: absolute;

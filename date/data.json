@@ -1,0 +1,20 @@
+[
+    {
+        "id": "0",
+        "src": "../images/nav04.webp"     
+    },
+    {
+        "id": "1",
+        "src": "../images/nav04.webp",
+        "name": "小米",
+        "money": "1299",
+        "explain": "潮流镜面渐变色，2400万自拍"
+    },
+    {
+        "id": "1",
+        "src": "../images/nav03.webp",
+        "name": "小米",
+        "money": "1299",
+        "explain": "潮流镜面渐变色，2400万自拍"
+    }
+]
