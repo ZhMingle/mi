@@ -8,11 +8,8 @@
     <div id="main">
       <div class="left-nav">
         <ul>
-          <li><a href="#">新品</a></li>
-          <li><a href="#">新品</a></li>
-          <li><a href="#">新品</a></li>
-          <li><a href="#">新品</a></li>
-          <li><a href="#">新品</a></li>
+          <li v-for="item in 30" :key="item"><a href="#">新品</a></li>
+
         </ul>
       </div>
       <div class="right-list">
