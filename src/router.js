@@ -6,7 +6,8 @@ Vue.use(VueRouter)
 export default new VueRouter({
   routes: [
     {
-      path: '', component: () => import('./views/HomeHasNav.vue'),
+      path: '/',
+      component: () => import('./views/HomeHasNav.vue'),
       children: [
         { path: '/', component: () => import('./views/Home.vue') },
         { path: 'category', component: () => import('./views/Category.vue') },

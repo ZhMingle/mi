@@ -1,10 +1,14 @@
 #header {
+  position: fixed;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
   height: .5rem;
   line-height: .5rem;
-  background: #f2f2f2;
   padding: 0 .24rem;
+  background: #f2f2f2;
 }
 
 #header span {
@@ -19,6 +23,8 @@
 #main .left-nav ul {
   float: left;
   width: .78rem;
+  height: 5.65rem;
+  overflow: auto;
   padding-top: .07rem;
   border-right: .01rem solid #efefef;
 }
@@ -31,8 +37,12 @@
 }
 
 #main .right-list {
+  position: absolute;
+  top:.5rem;
+  left:.8rem;
   padding-right: .16rem;
-  padding-left: .92rem;
+  padding-left: .12rem;
+  background:#fff;
 }
 
 #main .right-list img {

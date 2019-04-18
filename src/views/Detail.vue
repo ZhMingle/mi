@@ -15,7 +15,7 @@
      <section id="d-footer">
          <div>
              <ul>
-                <li><i class="iconfont icon-shouye1 "></i><span>首页</span></li>                
+                <li><i class="iconfont icon-shouye1 "></i><span>首页</span></li>
                 <li><i class="iconfont icon-gwc "></i><span>购物车</span></li>
              </ul>
              <span>加入购物车</span>

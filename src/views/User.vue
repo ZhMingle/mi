@@ -70,6 +70,8 @@
     <div class="content"></div>
   </div>
 </template>
+export default ()
+
 <style>
   @import 'http://at.alicdn.com/t/font_1008288_steni400igq.css';
   @import '../styles/user.css';
