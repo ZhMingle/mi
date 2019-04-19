@@ -94,7 +94,7 @@
                 </router-link>
             </li>
           </ul>
-          <div><button @click="loadmon">加载更多</button></div>
+          <div><button>加载更多</button></div>
         </div>
       </div>
     </section>
