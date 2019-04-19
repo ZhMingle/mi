@@ -13,10 +13,9 @@ import { Tabbar, TabbarItem, Icon } from 'vant'
 Vue.use(Tabbar).use(TabbarItem).use(Icon)
 export default {
   data () {
-    // let tabNumber = this.$route.
-
+    let tabNumber = this.$route.meta.tabNumber
     return {
-      active: 0
+      active: tabNumber
     }
   }
 }

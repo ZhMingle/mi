@@ -138,6 +138,8 @@ body #content .in-box01 .nav ul img {
 body #content .in-box01 .picture ul li {
   float: left;
   width: 50%;
+  box-sizing: border-box;
+  padding: 2px;
 }
 
 body #content .in-box01 .picture ul li img {

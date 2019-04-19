@@ -24,9 +24,9 @@
         <li>推荐</li>
         <li>推荐</li>
         <li>笔记</li>
-        <li>推荐</li> 
         <li>推荐</li>
-        <li>笔记</li>         
+        <li>推荐</li>
+        <li>笔记</li>
       </ul>
       </div>
       <i class='iconfont icon-xiala'></i>
@@ -70,52 +70,38 @@
           </ul>
         </div>
         <div class='picture'>
-          <ul>
-            <li>
-              <router-link to="/detail">
-                <img src='../images/icon111.webp'>
-              </router-link>
-            </li>
-            <li>
-              <a href='#'>
-                <img src='../images/icon12.webp'>
-              </a>
-              <h2>&nbsp;&nbsp;小米8</h2>
-              <p>&nbsp;&nbsp;潮流镜面渐变色，2400万自拍</p>
-              <p>&nbsp;&nbsp;￥1299</p>
-            </li>
-            <li>
-              <a href='#'>
-                <img src='../images/icon13.png'>
-              </a>
-              <h2>&nbsp;&nbsp;小米8</h2>
-              <p>&nbsp;&nbsp;潮流镜面渐变色，2400万自拍</p>
-              <p>&nbsp;&nbsp;￥1299</p>
-            </li>
-            <li>
-              <a href='#'>
-                <img src='../images/icon12.webp'>
-              </a>
-              <h2>&nbsp;&nbsp;小米8</h2>
-              <p>&nbsp;&nbsp;潮流镜面渐变色，2400万自拍</p>
-              <p>&nbsp;&nbsp;￥1299</p>
-            </li>
-            <li>
-              <a href='#'>
-                <img src='../images/icon13.png'>
-              </a>
-              <h2>&nbsp;&nbsp;小米8</h2>
-              <p>&nbsp;&nbsp;潮流镜面渐变色，2400万自拍</p>
-              <p>&nbsp;&nbsp;￥1299</p>
+          <ul>               
+            <li v-for="item in phoneList" :key="item.id">
+               <router-link to="/detail">
+                <a href='#'>
+                      <img :src='item.src'>
+                </a>
+                <h2>{{item.name}}</h2>
+                <p>{{item.explain}}</p>
+                <p style="color:red;font-size:.16rem;">{{item.money}}</p>
+                </router-link>
             </li>
           </ul>
+           <ul>               
+            <li v-for="item in phoneList" :key="item.id">
+               <router-link to="/detail">
+                <a href='#'>
+                      <img :src='item.src'>
+                </a>
+                <h2>{{item.name}}</h2>
+                <p>{{item.explain}}</p>
+                <p style="color:red;font-size:.16rem;">{{item.money}}</p>
+                </router-link>
+            </li>
+          </ul>
+          <div><button @click="loadmon">加载更多</button></div>
         </div>
       </div>
     </section>
   </div>
 </template>
 <script>
-
+import axios from 'axios'
 import Vue from 'vue'
 import { Swipe, SwipeItem, Lazyload } from 'vant'
 Vue.use(Swipe)
@@ -131,10 +117,21 @@ export default {
         require('../images/banner02.webp'),
         require('../images/banner03.webp'),
         require('../images/banner01.webp')
-      ]
+      ],
+      phoneList:[],
+     
     }
-  }
-
+  },
+  methods: {
+      home (){
+        axios.get('/json/home.json').then(res=>{
+          this.phoneList = res.data;
+        })
+      }
+  },
+    created (){
+      this.home();
+    },  
 }
 </script>
 <style>
