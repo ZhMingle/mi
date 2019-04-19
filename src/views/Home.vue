@@ -42,7 +42,7 @@
         </van-swipe>
         <div class='nav'>
           <ul>
-            <li>
+            <li >
               <a href='#'>
                 <img src='../images/nav01.webp'>
               </a>
