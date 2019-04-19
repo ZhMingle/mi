@@ -3,7 +3,7 @@
     <div id="user-header">
       <div class="wrap">
         <img src="https://s1.mi.com/m/images/m/default.png" alt>
-        <span>登录/注册</span>
+        <router-link to="./Login">登录/注册</router-link>
       </div>
     </div>
     <div class="order">

@@ -15,7 +15,8 @@
           <i class='iconfont icon-wode'></i>
         </a>
       </div>
-      <div class='in-list'>
+      <div class="in-lists">
+      <ul class='in-list'>
         <li>推荐</li>
         <li>推荐</li>
         <li>推荐</li>
@@ -24,10 +25,12 @@
         <li>推荐</li>
         <li>笔记</li>
         <li>推荐</li>
-        <i class='iconfont icon-xiala'></i>
+        <li>推荐</li>
+        <li>笔记</li>
+      </ul>
       </div>
+      <i class='iconfont icon-xiala'></i>
     </header>
-
     <section id='content'>
       <div class='in-box01'>
         <van-swipe :autoplay='2000' indicator-color='red'>
@@ -135,6 +138,5 @@ export default {
 }
 </script>
 <style>
-@import 'http://at.alicdn.com/t/font_962111_ki0u9gfn0z.css';
 @import '../styles/index.css';
 </style>

@@ -15,7 +15,8 @@ export default new VueRouter({
         { path: 'user', component: () => import('./views/User.vue'), meta: { tabNumber: 3 } }
       ]
     },
-    { path: '/detail', component: () => import('./views/Detail.vue') }
+    { path: '/detail', component: () => import('./views/Detail.vue') },
+    { path: '/login', component: () => import('./views/Login.vue') }
 
   ]
 })
