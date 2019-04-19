@@ -76,54 +76,12 @@
         <img src="https://i8.mifile.cn/b2c-mimall-media/e95ade2750a7fde92369b416c7d3176d.jpg" alt>
       </div>
       <div class="recommend-list">
-        <div class="goods">
-          <img
-            src="https://i8.mifile.cn/b2c-mimall-media/a4d88530d1e6c0882345e44015c3cac2!360x360.jpg"
-            alt
-          >
-          <p>最生活浴巾•Air（1条装）最生活浴巾•Air（1条装）</p>
-          <span>￥69</span>
+        <div class="goods" v-for='item in recomList' :key="item.image_url">
+          <img :src="item.image_url">
+          <p>{{item.name}}</p>
+          <span>￥{{item.price}}</span>
         </div>
-        <div class="goods">
-          <img
-            src="https://i8.mifile.cn/b2c-mimall-media/a4d88530d1e6c0882345e44015c3cac2!360x360.jpg"
-            alt
-          >
-          <p>最生活浴巾•Air（1条装）最生活浴巾•Air（1条装）</p>
-          <span>￥69</span>
-        </div>
-        <div class="goods">
-          <img
-            src="https://i8.mifile.cn/b2c-mimall-media/a4d88530d1e6c0882345e44015c3cac2!360x360.jpg"
-            alt
-          >
-          <p>最生活浴巾•Air（1条装）最生活浴巾•Air（1条装）</p>
-          <span>￥69</span>
-        </div>
-        <div class="goods">
-          <img
-            src="https://i8.mifile.cn/b2c-mimall-media/a4d88530d1e6c0882345e44015c3cac2!360x360.jpg"
-            alt
-          >
-          <p>最生活浴巾•Air（1条装）最生活浴巾•Air（1条装）</p>
-          <span>￥69</span>
-        </div>
-        <div class="goods">
-          <img
-            src="https://i8.mifile.cn/b2c-mimall-media/a4d88530d1e6c0882345e44015c3cac2!360x360.jpg"
-            alt
-          >
-          <p>最生活浴巾•Air（1条装）最生活浴巾•Air（1条装）</p>
-          <span>￥69</span>
-        </div>
-        <div class="goods clearfix">
-          <img
-            src="https://i8.mifile.cn/b2c-mimall-media/a4d88530d1e6c0882345e44015c3cac2!360x360.jpg"
-            alt
-          >
-          <p>最生活浴巾•Air（1条装）最生活浴巾•Air（1条装）</p>
-          <span>￥69</span>
-        </div>
+
       </div>
       <div class="bottom-submit clearfix">
         <div>
@@ -142,6 +100,27 @@
     </div>
   </div>
 </template>
+<script>
+import axios from 'axios'
+export default {
+  data () {
+    return {
+      recomList: []
+    }
+  },
+  methods: {
+    getRecommend () {
+      axios.get('/json/recommend.json').then(res => {
+        // console.log(res.data.data.recom_list)
+        this.recomList = res.data.data.recom_list
+      })
+    }
+  },
+  created () {
+    this.getRecommend()
+  }
+}
+</script>
 <style>
   @import '../styles/cart.css';
 </style>
