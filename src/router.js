@@ -16,7 +16,6 @@ export default new VueRouter({
       ]
     },
     { path: '/detail', component: () => import('./views/Detail.vue') },
-    { path: '/login', component: () => import('./views/Login.vue') }
-
+    { path: '/Login', component: () => import('./views/Login') }
   ]
 })

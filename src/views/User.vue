@@ -20,7 +20,7 @@
       </a>
       <a href="#">
         <i class="iconfont font icon-daishouhuo"></i>
-        <span>待付款</span> 
+        <span>待付款</span>
       </a>
       <a href="#">
         <i class="iconfont font icon-banshou"></i>
