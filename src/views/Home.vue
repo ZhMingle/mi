@@ -70,7 +70,7 @@
           </ul>
         </div>
         <div class='picture'>
-          <ul>               
+          <ul>
             <li v-for="item in phoneList" :key="item.id">
                <router-link to="/detail">
                 <a href='#'>
@@ -82,7 +82,7 @@
                 </router-link>
             </li>
           </ul>
-           <ul>               
+           <ul>
             <li v-for="item in phoneList" :key="item.id">
                <router-link to="/detail">
                 <a href='#'>
@@ -118,20 +118,20 @@ export default {
         require('../images/banner03.webp'),
         require('../images/banner01.webp')
       ],
-      phoneList:[],
-     
+      phoneList: []
+
     }
   },
   methods: {
-      home (){
-        axios.get('/json/home.json').then(res=>{
-          this.phoneList = res.data;
-        })
-      }
+    home () {
+      axios.get('/json/home.json').then(res => {
+        this.phoneList = res.data
+      })
+    }
   },
-    created (){
-      this.home();
-    },  
+  created () {
+    this.home()
+  }
 }
 </script>
 <style>
