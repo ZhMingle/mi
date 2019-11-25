@@ -1,0 +1,127 @@
+[
+  {
+    "category_name_en": "",
+    "category_name": "新品",
+    "category_id": 653
+  },
+  {
+    "category_name_en": "",
+    "category_name": "众筹",
+    "category_id": 940
+  },
+  {
+    "category_name_en": "shouji",
+    "category_name": "手机",
+    "category_id": 457
+  },
+  {
+    "category_name_en": "dianshi",
+    "category_name": "电视",
+    "category_id": 458
+  },
+  {
+    "category_name_en": "diannao",
+    "category_name": "电脑",
+    "category_id": 459
+  },
+  {
+    "category_name_en": "jiadian",
+    "category_name": "家电",
+    "category_id": 460
+  },
+{
+    "category_name_en": "luyou",
+    "category_name": "路由",
+    "category_id": 462
+  },
+{
+    "category_name_en": "",
+    "category_name": "出行",
+    "category_id": 871
+  },
+{
+    "category_name_en": "",
+    "category_name": "穿戴",
+    "category_id": 874
+  },
+{
+    "category_name_en": "zhineng",
+    "category_name": "智能",
+    "category_id": 461
+  },
+{
+    "category_name_en": "dianyuan",
+    "category_name": "电源",
+    "category_id": 463
+  },
+{
+    "category_name_en": "",
+    "category_name": "健康",
+    "category_id": 876
+  },
+{
+    "category_name_en": "",
+    "category_name": "灯具",
+    "category_id": 803
+  },
+{
+    "category_name_en": "",
+    "category_name": "儿童",
+    "category_id": 727
+  },
+{
+    "category_name_en": "",
+    "category_name": "插线板",
+    "category_id": 877
+  },
+{
+    "category_name_en": "erji",
+    "category_name": "音频",
+    "category_id": 464
+  },
+{
+    "category_name_en": "yinxiang",
+    "category_name": "箱包",
+    "category_id": 465
+  },
+{
+    "category_name_en": "shenghuo",
+    "category_name": "生活",
+    "category_id": 466
+  },
+{
+    "category_name_en": "",
+    "category_name": "配件",
+    "category_id": 878
+  },
+{
+    "category_name_en": "家装",
+    "category_name": "家装",
+    "category_id": 788
+  },
+{
+    "category_name_en": "lipin",
+    "category_name": "礼品",
+    "category_id": 456
+  },
+{
+    "category_name_en": "",
+    "category_name": "服务",
+    "category_id": 737
+  },
+{
+    "category_name_en": "membercard",
+    "category_name": "会员卡",
+    "category_id": 852
+  },
+{
+    "category_name_en": "",
+    "category_name": "米粉卡",
+    "category_id": 670
+  },
+{
+    "category_name_en": "lingshoudian",
+    "category_name": "零售店",
+    "category_id": 468
+  }
+]
